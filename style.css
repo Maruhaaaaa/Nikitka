@@ -1,0 +1,18 @@
+body{
+    background-size: 35%;
+    background-repeat: no-repeat;
+}
+.buttonCombat{
+    position: absolute;
+    left: 120px;
+    bottom: 100px;
+}
+label{
+    font-size: 50px;
+    position: absolute;
+    left: 45px;
+    top:-9px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px black;
+    font-family: OCR A Std, monospace;
+}

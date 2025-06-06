@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Tap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="Group 2.png">
+    <label id="counter">0</label>
+    <img id="imgButton" class="buttonCombat" src="Group 1.png">
+
+</body>
+
+<script>
+    let imgButton = document.getElementById("imgButton");
+    let counter = document.getElementById("counter");
+    
+    imgButton.addEventListener("click", e => {
+        counter.innerHTML = parseInt(counter.innerHTML)+1;
+        imgButton.setAttribute("style","width:200px");
+        setInterval(e =>
+        {
+            imgButton.setAttribute("style","width:210px");
+        }, 100)
+        
+    })
+</script>
+</html>
